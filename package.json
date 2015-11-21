@@ -1,0 +1,26 @@
+{
+  "name": "angular-study",
+  "version": "1.0.0",
+  "description": "angular",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tykim89/angular-study.git"
+  },
+  "keywords": [
+    "angular"
+  ],
+  "author": "tykim89",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tykim89/angular-study/issues"
+  },
+  "homepage": "https://github.com/tykim89/angular-study#readme",
+  "dependencies": {
+    "express": "^4.13.3",
+    "path": "^0.12.7"
+  }
+}
