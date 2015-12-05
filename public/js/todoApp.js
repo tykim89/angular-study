@@ -24,7 +24,7 @@ todoApp.controller("TodoController", function($scope){
 	}
 
 	$scope.todoAdd = function(){
-		alert('aaaa');
+		
 	}
 
 });
