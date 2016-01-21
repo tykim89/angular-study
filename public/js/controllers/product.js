@@ -4,13 +4,13 @@
 
 angular.module('product',['customFilter'])
 .constant('url', 'http://localhost:8080/product')
-.controller('productCtrl', function($scope, $gttp, url){
+.controller('productCtrl', function($scope, $http, url){
     $scope.data={};
 
-    $gttp.get(url)
+    $http.get(url)
         .success(function(data){
             $scope.data.products = data;
-        });
+        })
         .error(function(error){
             $scope.data.error = error;
         });

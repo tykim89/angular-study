@@ -20,7 +20,7 @@
  			return data;
  		}
  	}
- });
+ })
  .filter('range', function($filter){
  	return function(data, page, size){
  		if(angular.isArray(data) && angular.isNumber(page) && angular.isNumber(size)){
@@ -28,11 +28,13 @@
  			if(data.length < startIndex){
  				return [];
  			}else{
- 				return data;
+ 				return $filter('limitTo')(data.splice(startIndex), size);
  			}
+ 		}else{
+ 			return data;
  		}
  	}
- });
+ })
  .filter('pageCount', function(){	// 페이지 수
  	return function(data, size){
  		if(angular.isArray(data)){
