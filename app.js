@@ -14,7 +14,11 @@ app.get('/todo', function(req, res){
 });
 
 app.get('/products', function(req, res){
-	res.sendFile(path.join(__dirname + '/public/html/product.html'))
+	res.sendFile(path.join(__dirname + '/public/html/product.html'));
+});
+
+app.get('/books', function(req, res){
+	res.sendFile(path.join(__dirname + '/public/html/book.html'));
 });
 
 app.listen(8080);
